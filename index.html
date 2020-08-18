@@ -63,7 +63,7 @@ textarea {border:1px solid rgba(0,64,80,0.55);opacity:0.55;}
     justify-content: center;font-size: 50px;font-weight: bolder;}
 .container {width:100%;height: 800px;display:grid;grid-template-columns: 1fr 1fr;grid-template-rows: 2fr 1fr 1fr 1fr;
  grid-template-areas:"top top"  "panela panelb" "panelc paneld" "panele panelf"; }
- .container img {float:left; padding-left:15%;padding-right:20px;}
+ .container img {float:left; padding-left:15%;padding-right:20px;padding-bottom:30px;}
  .container h3 {font-size:22px;color:#2e2e2e;}
 .container p {font-size:16px; color:#555555;padding-top:20px;margin-right:5%;}
 .container div {align-items: center;padding-top:10px;width:100%;}
@@ -80,8 +80,8 @@ footer {background-color:#004050;color:#fefefe;width:60%; height:200px; position
 
 /*media queries*/
 @media(max-width:800px) 
-{header {grid-template-rows:repeat (4/1fr);grid-template-areas:"h1 h1" "menu menu" "navbar navbar" "textbox textbox";}.navbar {display:flex; flex-direction:row;justify-content:space-evenly;}
-.container {display:flex; flex-direction:column;} .banner {background-image:center;} }
+{header {grid-template-rows:repeat (5/1fr);grid-template-areas:"h1 menu" "menu menu" "navbar navbar" "navbar navbar" "navbar textbox";}.navbar {display:flex; flex-direction:row;justify-content:space-evenly;}
+.container {display:flex; flex-direction:column;} .banner {background-image:center;} .navbar {display:flex; flex-wrap: wrap; justify-content:space-evenly;}.menu {display:flex; flex-wrap: wrap;flex-direction: row;}}
 </style>
 <header>
 <h1><img src="logo.png" alt="ashfield log"/></h1>
@@ -116,9 +116,9 @@ executed flawlessly, to deliver positive outcomes for patients and add value to 
 <div class="panelf"></div></div>
 </main>
 <footer>
-	<h4 font-size="24px">WE ARE HIRING!</h4>
-	<p font-size="20px">Ashfield is a fast-paced place to work where you’ll enjoy the opportunity to grow and develop your career within the pharma industry</p>
-	<p font-size="18px">We employ people on a permanent basis for a broad number of roles within the pharmaceutical industry including: key account managers, information specialists, medical sales representatives, nurses, medical writers, scientific directors, creative and multichannel specialists, meetings and events project managers and many more
+	<h4 font-size="2em">WE ARE HIRING!</h4>
+	<p font-size="1.5em">Ashfield is a fast-paced place to work where you’ll enjoy the opportunity to grow and develop your career within the pharma industry</p>
+	<p font-size="1em">We employ people on a permanent basis for a broad number of roles within the pharmaceutical industry including: key account managers, information specialists, medical sales representatives, nurses, medical writers, scientific directors, creative and multichannel specialists, meetings and events project managers and many more
 </p></footer>
 
 
