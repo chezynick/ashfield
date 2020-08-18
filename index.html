@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {font-family: "john-sans",Helvetica,Roboto,Arial,sans-serif;background-color: #fefefe;}
+header {position:fixed;top:0;width:100%;height:160px;background-color:#fefefe; display:grid; grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas:"h1 menu" "h1 textbox" "navbar navbar";}
+h1 {grid-area:h1; background-color: #fefefe;display:flex;align-items:center;padding-left:10%;}
+.menu {grid-area:menu;background-color: #fefefe;display:flex; align-items: center;justify-content:space-evenly;}
+.textbox {grid-area:textbox;background-color: #fefefe; display:flex; align-items:center;justify-content: flex-end;padding-right:20px;}
+.navbar {grid-area:navbar; background-color:rgb(0, 64, 80); font-size:18px;display:flex; justify-content: space-evenly;align-items: center;}
+a {text-decoration: none;color:#fefefe;}
+a:hover {color:yellowgreen;}
+a.mu {text-decoration: none;color:#004050; }
+a.mu:hover {color:yellowgreen;}
+textarea {border:1px solid rgba(0,64,80,0.55);opacity:0.55;}
+.covid {width:100%; height:50px;background: #2199e8;
+    color: #fefefe;display:flex;align-items:center;justify-content: center;margin-top:160px;}
+    .banner {width:95%;height:456px;background-image:url(Untitled.png);
+    color:#004050;;display:flex; flex-direction: column;padding-left:5%;align-items:flex-start;
+    justify-content: center;font-size: 50px;font-weight: bolder;}
+.container {width:100%;height: 800px;display:grid;grid-template-columns: 1fr 1fr;grid-template-rows: 2fr 1fr 1fr 1fr;
+ grid-template-areas:"top top"  "panela panelb" "panelc paneld" "panele panelf"; }
+ .container img {float:left; padding-left:15%;padding-right:20px;}
+ .container h3 {font-size:22px;color:#2e2e2e;}
+.container p {font-size:16px; color:#555555;padding-top:20px;}
+.container div {align-items: center;padding-top:10px;width:100%;}
+ .top {grid-area:top; background-color: #fefefe;display:flex; flex-direction:column;align-items: center;
+ 		width:100%;padding-top:2%;padding-bottom:2%;justify-content: center;}
+ .panela {grid-area:panela;background-color: #fefefe;}
+ .panelb {grid-area:panelb;background-color: #fefefe;}
+ .panelc {grid-area:panelc;background-color: #fefefe;}
+ .paneld {grid-area:paneld;background-color: #fefefe;}
+ .panele {grid-area:panele;background-color: #fefefe;}
+ .panelf {grid-area:panelf;background-color: #fefefe;}
+#bumpf {margin-left:30%;margin-right:30%;}
+</style>
+<header>
+<h1><img src="logo.png" alt="ashfield log"/></h1>
+<p class="menu" ><a class="mu" href="">English-uk</a> <a class="mu" href="">Contact us</a><a class="mu" href="">Our Locations</a><a class="mu" href="">Blog</a><a class="mu" href="">News & Events</a>
+<a class="mu" href="">Resources</a></p>
+<p class="textbox">
+    <label></label>
+    <textarea id = "myTextArea"
+            rows = "1"
+            cols = "30">Search...</textarea>
+  </p>
+<div class="navbar"><a href="">Advisory</a><a href="">Healthcare Communications</a><a href ="">Commercial</a><a href="">Patient Solutions</a>
+<a href="">Medical Affairs</a><a href="">Careers</a><a href="">About Us</a>
+</div>
+</header>
+<div class="covid">Visit our COVID-19 Response Center for all our updates | <a href="">Click Here</a> </div>
+
+<main>
+<div class="banner"></div>
+<div class="container">
+<div class="top"><h3>WHAT WE DO</h3>
+<p id="bumpf">Ashfield, part of UDG Healthcare plc, is a global leader in
+commercialisation services for the healthcare industry.
+ We partner with our clients across Advisory, Healthcare Communications, Commercial, Patient
+Solutions and Medical Affairs to build creative, scalable and tailored health solutions that are
+executed flawlessly, to deliver positive outcomes for patients and add value to your business.</p></div>
+<div class="panela"><img src="wwd-advisory.png" alt="advisory badge"/><h3>Advisory</h3><p>Partnering strategically with clients to accelerate performance by applying healthcare industry expertise with outstanding execution.</p></div>
+<div class="panelb"><img src="wwd-healthcare.png" alt="healthcare badge"/><h3>Healthcare</h3><p>Connecting insight, intelligence and expertise to flawlessly execute powerful, multichannel communication solutions.</p></div>
+<div class="panelc"><img src="wwd-commercial.png" alt="commercial badge"/><h3>Commercial</h3><p>Delivering tailored, scalable and effective sales and marketing solutions to maximise our clients’ returns.</p></div>
+<div class="paneld"><img src="wwd-patient-solutions.png" alt="patient badge"/><h3>Patient Solutions</h3><p>Providing agile, innovative educational and adherence support services to achieve better outcomes.</p></div>
+<div class="panele"><img src="wwd-medical-affairs.png" alt="medcal badge"/><h3>Medical Affairs</h3><p>Applying in-depth knowledge and unsurpassed expertise in all aspects of medical affairs.</p></div>
+<div class="panelf"></div></div>
+</main>
+
+
+
+
+</html>
